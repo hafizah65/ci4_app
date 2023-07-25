@@ -29,7 +29,7 @@ class User extends BaseController
         }
         $data['title'] = 'Pengguna';
         // $data['user'] = $this->userModel->findAll();
-        //test
+        //test again
         $data['user'] = $user->paginate(10, 'user');
         $data['pager'] = $this->userModel->pager;
 

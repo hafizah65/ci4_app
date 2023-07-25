@@ -44,7 +44,7 @@ $routes->delete('/komik/(:num)', 'Komik::delete/$1');
 $routes->get('/komik/(:any)', 'Komik::detail/$1');
 
 $routes->get('/user', 'User::index');
-$routes->post('/user', 'User::index');
+// $routes->post('/user', 'User::index');
 
 
 /*

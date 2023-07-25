@@ -19,15 +19,13 @@ class User extends BaseController
     {
         $keyword = $this->request->getVar('keyword');
 
-        //carian function ni still ad loophole since dia akan reset when change pagination/page
         if ($keyword) {
-            $data['currentPage'] = 1;
             $user = $this->userModel->searchBy($keyword);
         } else {
-            $data['currentPage'] = $this->request->getVar('page_user') ?: 1;
             $user = $this->userModel;
         }
         $data['title'] = 'Pengguna';
+        $data['currentPage'] = $this->request->getVar('page_user') ?: 1;
         // $data['user'] = $this->userModel->findAll();
         //test
         $data['user'] = $user->paginate(10, 'user');

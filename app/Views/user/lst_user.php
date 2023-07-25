@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-6">
             <h1 class="mt-2">Senarai Pengguna</h1>
-            <form action="" method="post">
+            <form action="" method="get">
                 <div class="input-group mb-3">
                     <input name="keyword" type="text" class="form-control" placeholder="Nama Pengguna" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>

@@ -1,0 +1,11 @@
+.sampul {
+    width: 100px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.table>tbody>tr>* {
+    vertical-align: middle;
+}

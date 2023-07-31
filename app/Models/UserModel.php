@@ -17,6 +17,6 @@ class UserModel extends Model
         // $builder->like('nama', $keyword);
         // return $builder;
 
-        return $this->table('users')->like('nama', $keyword)->orLike('alamat', $keyword);
+        return $this->like('nama', $keyword)->orLike('alamat', $keyword);
     }
 }

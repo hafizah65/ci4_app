@@ -24,7 +24,7 @@
                     <?php foreach ($komik as $k) : ?>
                         <tr>
                             <th scope="row"><?= $i++; ?></th>
-                            <td><img src="<?= base_url('/img/') . $k['sampul']; ?>" alt="" class="sampul"></td>
+                            <td><img src="<?= base_url('/public/img/') . $k['sampul']; ?>" alt="" class="sampul"></td>
                             <td><?= $k['judul']; ?></td>
                             <td><a href="<?= base_url('komik/') . $k['slug']; ?>" class="btn btn-success">Detail</a></td>
                         </tr>
@@ -37,7 +37,7 @@
         <?php foreach ($komik as $k1) : ?>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="<?= base_url('/img/') . $k1['sampul']; ?>" class="card-img-top" alt="">
+                    <img src="<?= base_url('/public/img/') . $k1['sampul']; ?>" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title"><?= $k1['judul']; ?></h5>
                         <p class="card-text"><?= $k1['penulis']; ?></p>
